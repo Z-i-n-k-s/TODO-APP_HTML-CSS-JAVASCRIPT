@@ -1,0 +1,144 @@
+/* Basic styling for the task section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdcdcd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .task {
+    background: #222;
+    color: #eee;
+    padding: 1.25rem;
+    border-radius: 0.8rem; 
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
+    
+    width: 100%;
+    max-width: 25rem; 
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1.2rem; 
+    align-items: center;
+  }
+  
+  .input-field {
+    width: 90%;
+    flex-grow: 1;
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.8rem; 
+  }
+  
+  .btn {
+    font-size: 0.85rem;
+    background-color: #49995d;
+    color: white;
+    width: 40%;
+    border: none;
+    padding: 0.6rem; 
+    cursor: pointer;
+    border-radius: 1rem; 
+    margin: 1rem;
+  }
+  .btn:hover {
+    font-size: 0.85rem;
+    background-color: #77f396;
+    color: rgb(3, 3, 3);
+    width: 40%;
+    border: none;
+    padding: 0.6rem; 
+    cursor: pointer;
+    border-radius: 1rem; 
+    margin: 1rem;
+  }
+ 
+  
+  .scroll {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 18.75rem; 
+    overflow-y: auto;
+  }
+  
+  .scroll li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.8rem; 
+    margin-bottom: 0.625rem; 
+    background-color: #e0ceeb;
+    cursor: move;
+    color: #222;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+  }
+  
+  .completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 0.3125rem; 
+  }
+  
+  .edit-icon, .delete-icon {
+    cursor: pointer;
+  }
+  
+  .edit-icon i{
+    color: #479ffd;
+  }
+  
+  .delete-icon i {
+    color: #fc5e79;
+  }
+  .edit-icon i:hover{
+    color: #0056b3;
+  }
+   .delete-icon i:hover {
+    color: #db1717;
+  }
+  
+  .counter-container {
+    text-align: center;
+    margin-top: 1.25rem; 
+  }
+  
+  #clearButton {
+    width: 35%;
+    background-color: #f15060;
+    color: white;
+    border: none;
+    padding: 0.625rem; 
+    cursor: pointer;
+    border-radius: 1rem; 
+  }
+  #clearButton:hover {
+    width: 35%;
+    background-color: #f04051;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.625rem; 
+    cursor: pointer;
+    border-radius: 1rem; 
+    
+  }
